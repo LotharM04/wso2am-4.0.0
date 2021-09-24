@@ -1,0 +1,700 @@
+TID: [-1234] [] [2021-09-16 00:32:17,362]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Starting WSO2 Carbon...
+TID: [-1234] [] [2021-09-16 00:32:17,378]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Operating System : Mac OS X 11.0.1, x86_64
+TID: [-1234] [] [2021-09-16 00:32:17,379]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Home        : /usr/local/Cellar/openjdk/16.0.2/libexec/openjdk.jdk/Contents/Home
+TID: [-1234] [] [2021-09-16 00:32:17,379]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Version     : 16.0.2
+TID: [-1234] [] [2021-09-16 00:32:17,379]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java VM          : OpenJDK 64-Bit Server VM 16.0.2+0,Homebrew
+TID: [-1234] [] [2021-09-16 00:32:17,379]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Carbon Home      : /Users/lotharmohlala/Downloads/wso2am-4.0.0
+TID: [-1234] [] [2021-09-16 00:32:17,379]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Temp Dir    : /Users/lotharmohlala/Downloads/wso2am-4.0.0/tmp
+TID: [-1234] [] [2021-09-16 00:32:17,379]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - User             : lotharmohlala, en-ZA, Africa/Johannesburg
+TID: [-1] [] [2021-09-16 00:32:17,507]  INFO {org.wso2.carbon.crypto.provider.internal.DefaultCryptoProviderComponent} - 'CryptoService.Secret' property has not been set. 'org.wso2.carbon.crypto.provider.SymmetricKeyInternalCryptoProvider' won't be registered as an internal crypto provider. Please set the secret if the provider needs to be registered.
+TID: [-1] [] [2021-09-16 00:32:17,835]  INFO {org.wso2.carbon.event.output.adapter.kafka.internal.ds.KafkaEventAdapterServiceDS} - Successfully deployed the Kafka output event adaptor service
+TID: [-1] [] [2021-09-16 00:32:17,973]  INFO {org.wso2.carbon.event.template.manager.core.internal.ds.TemplateDeployerServiceTrackerDS} - Successfully deployed the execution manager tracker service
+TID: [-1234] [] [2021-09-16 00:32:20,161] ERROR {org.wso2.carbon.user.core.common.DefaultRealm} - nullType class java.lang.reflect.InvocationTargetException org.wso2.carbon.user.core.UserStoreException: nullType class java.lang.reflect.InvocationTargetException
+	at org.wso2.carbon.user.core.common.DefaultRealm.createObjectWithOptions(DefaultRealm.java:404)
+	at org.wso2.carbon.user.core.common.DefaultRealm.initializeObjects(DefaultRealm.java:231)
+	at org.wso2.carbon.user.core.common.DefaultRealm.init(DefaultRealm.java:136)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.initializeRealm(DefaultRealmService.java:276)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:102)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:115)
+	at org.wso2.carbon.user.core.internal.Activator.startDeploy(Activator.java:72)
+	at org.wso2.carbon.user.core.internal.BundleCheckActivator.start(BundleCheckActivator.java:61)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1013)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:598)
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1770)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.wso2.carbon.user.core.common.DefaultRealm.createObjectWithOptions(DefaultRealm.java:358)
+	... 25 more
+Caused by: org.wso2.carbon.user.core.UserStoreException: DB error occurred while persisting domain : PRIMARY & tenant id : -1234
+	at org.wso2.carbon.user.core.util.UserCoreUtil.persistDomain(UserCoreUtil.java:882)
+	at org.wso2.carbon.user.core.common.AbstractUserStoreManager.persistDomain(AbstractUserStoreManager.java:9023)
+	at org.wso2.carbon.user.core.jdbc.JDBCUserStoreManager.<init>(JDBCUserStoreManager.java:319)
+	at org.wso2.carbon.user.core.jdbc.JDBCUserStoreManager.<init>(JDBCUserStoreManager.java:261)
+	at org.wso2.carbon.user.core.jdbc.UniqueIDJDBCUserStoreManager.<init>(UniqueIDJDBCUserStoreManager.java:129)
+	... 31 more
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:319)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:212)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:744)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:676)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.getConnection(ConnectionPool.java:198)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.wso2.carbon.user.core.util.DatabaseUtil.getDBConnection(DatabaseUtil.java:1058)
+	at org.wso2.carbon.user.core.util.UserCoreUtil.persistDomain(UserCoreUtil.java:862)
+	... 35 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/lotharmohlala/Downloads/wso2am-4.0.0/repository/database/WSO2SHARED_DB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	... 57 more
+
+TID: [-1234] [] [2021-09-16 00:32:20,182] ERROR {org.wso2.carbon.user.core.internal.Activator} - Cannot start User Manager Core bundle org.wso2.carbon.user.core.UserStoreException: Cannot initialize the realm.
+	at org.wso2.carbon.user.core.common.DefaultRealmService.initializeRealm(DefaultRealmService.java:286)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:102)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:115)
+	at org.wso2.carbon.user.core.internal.Activator.startDeploy(Activator.java:72)
+	at org.wso2.carbon.user.core.internal.BundleCheckActivator.start(BundleCheckActivator.java:61)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1013)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:598)
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1770)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+Caused by: org.wso2.carbon.user.core.UserStoreException: nullType class java.lang.reflect.InvocationTargetException
+	at org.wso2.carbon.user.core.common.DefaultRealm.initializeObjects(DefaultRealm.java:325)
+	at org.wso2.carbon.user.core.common.DefaultRealm.init(DefaultRealm.java:136)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.initializeRealm(DefaultRealmService.java:276)
+	... 22 more
+Caused by: org.wso2.carbon.user.core.UserStoreException: nullType class java.lang.reflect.InvocationTargetException
+	at org.wso2.carbon.user.core.common.DefaultRealm.createObjectWithOptions(DefaultRealm.java:404)
+	at org.wso2.carbon.user.core.common.DefaultRealm.initializeObjects(DefaultRealm.java:231)
+	... 24 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.wso2.carbon.user.core.common.DefaultRealm.createObjectWithOptions(DefaultRealm.java:358)
+	... 25 more
+Caused by: org.wso2.carbon.user.core.UserStoreException: DB error occurred while persisting domain : PRIMARY & tenant id : -1234
+	at org.wso2.carbon.user.core.util.UserCoreUtil.persistDomain(UserCoreUtil.java:882)
+	at org.wso2.carbon.user.core.common.AbstractUserStoreManager.persistDomain(AbstractUserStoreManager.java:9023)
+	at org.wso2.carbon.user.core.jdbc.JDBCUserStoreManager.<init>(JDBCUserStoreManager.java:319)
+	at org.wso2.carbon.user.core.jdbc.JDBCUserStoreManager.<init>(JDBCUserStoreManager.java:261)
+	at org.wso2.carbon.user.core.jdbc.UniqueIDJDBCUserStoreManager.<init>(UniqueIDJDBCUserStoreManager.java:129)
+	... 31 more
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:319)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:212)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:744)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:676)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.getConnection(ConnectionPool.java:198)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.wso2.carbon.user.core.util.DatabaseUtil.getDBConnection(DatabaseUtil.java:1058)
+	at org.wso2.carbon.user.core.util.UserCoreUtil.persistDomain(UserCoreUtil.java:862)
+	... 35 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/lotharmohlala/Downloads/wso2am-4.0.0/repository/database/WSO2SHARED_DB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	... 57 more
+
+TID: [-1234] [] [2021-09-16 00:35:05,912]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Starting WSO2 Carbon...
+TID: [-1234] [] [2021-09-16 00:35:05,921]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Operating System : Mac OS X 11.0.1, x86_64
+TID: [-1234] [] [2021-09-16 00:35:05,922]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Home        : /usr/local/Cellar/openjdk/16.0.2/libexec/openjdk.jdk/Contents/Home
+TID: [-1234] [] [2021-09-16 00:35:05,922]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Version     : 16.0.2
+TID: [-1234] [] [2021-09-16 00:35:05,922]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java VM          : OpenJDK 64-Bit Server VM 16.0.2+0,Homebrew
+TID: [-1234] [] [2021-09-16 00:35:05,922]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Carbon Home      : /Users/lotharmohlala/Downloads/wso2am-4.0.0
+TID: [-1234] [] [2021-09-16 00:35:05,923]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Temp Dir    : /Users/lotharmohlala/Downloads/wso2am-4.0.0/tmp
+TID: [-1234] [] [2021-09-16 00:35:05,923]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - User             : lotharmohlala, en-ZA, Africa/Johannesburg
+TID: [-1] [] [2021-09-16 00:35:06,109]  INFO {org.wso2.carbon.crypto.provider.internal.DefaultCryptoProviderComponent} - 'CryptoService.Secret' property has not been set. 'org.wso2.carbon.crypto.provider.SymmetricKeyInternalCryptoProvider' won't be registered as an internal crypto provider. Please set the secret if the provider needs to be registered.
+TID: [-1] [] [2021-09-16 00:35:06,484]  INFO {org.wso2.carbon.event.output.adapter.kafka.internal.ds.KafkaEventAdapterServiceDS} - Successfully deployed the Kafka output event adaptor service
+TID: [-1] [] [2021-09-16 00:35:06,635]  INFO {org.wso2.carbon.event.template.manager.core.internal.ds.TemplateDeployerServiceTrackerDS} - Successfully deployed the execution manager tracker service
+TID: [-1234] [] [2021-09-16 00:35:08,922] ERROR {org.wso2.carbon.user.core.common.DefaultRealm} - nullType class java.lang.reflect.InvocationTargetException org.wso2.carbon.user.core.UserStoreException: nullType class java.lang.reflect.InvocationTargetException
+	at org.wso2.carbon.user.core.common.DefaultRealm.createObjectWithOptions(DefaultRealm.java:404)
+	at org.wso2.carbon.user.core.common.DefaultRealm.initializeObjects(DefaultRealm.java:231)
+	at org.wso2.carbon.user.core.common.DefaultRealm.init(DefaultRealm.java:136)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.initializeRealm(DefaultRealmService.java:276)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:102)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:115)
+	at org.wso2.carbon.user.core.internal.Activator.startDeploy(Activator.java:72)
+	at org.wso2.carbon.user.core.internal.BundleCheckActivator.start(BundleCheckActivator.java:61)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1013)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:598)
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1770)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.wso2.carbon.user.core.common.DefaultRealm.createObjectWithOptions(DefaultRealm.java:358)
+	... 25 more
+Caused by: org.wso2.carbon.user.core.UserStoreException: DB error occurred while persisting domain : PRIMARY & tenant id : -1234
+	at org.wso2.carbon.user.core.util.UserCoreUtil.persistDomain(UserCoreUtil.java:882)
+	at org.wso2.carbon.user.core.common.AbstractUserStoreManager.persistDomain(AbstractUserStoreManager.java:9023)
+	at org.wso2.carbon.user.core.jdbc.JDBCUserStoreManager.<init>(JDBCUserStoreManager.java:319)
+	at org.wso2.carbon.user.core.jdbc.JDBCUserStoreManager.<init>(JDBCUserStoreManager.java:261)
+	at org.wso2.carbon.user.core.jdbc.UniqueIDJDBCUserStoreManager.<init>(UniqueIDJDBCUserStoreManager.java:129)
+	... 31 more
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:319)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:212)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:744)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:676)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.getConnection(ConnectionPool.java:198)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.wso2.carbon.user.core.util.DatabaseUtil.getDBConnection(DatabaseUtil.java:1058)
+	at org.wso2.carbon.user.core.util.UserCoreUtil.persistDomain(UserCoreUtil.java:862)
+	... 35 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/lotharmohlala/Downloads/wso2am-4.0.0/repository/database/WSO2SHARED_DB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	... 57 more
+
+TID: [-1234] [] [2021-09-16 00:35:08,944] ERROR {org.wso2.carbon.user.core.internal.Activator} - Cannot start User Manager Core bundle org.wso2.carbon.user.core.UserStoreException: Cannot initialize the realm.
+	at org.wso2.carbon.user.core.common.DefaultRealmService.initializeRealm(DefaultRealmService.java:286)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:102)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:115)
+	at org.wso2.carbon.user.core.internal.Activator.startDeploy(Activator.java:72)
+	at org.wso2.carbon.user.core.internal.BundleCheckActivator.start(BundleCheckActivator.java:61)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1013)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:598)
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1770)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+Caused by: org.wso2.carbon.user.core.UserStoreException: nullType class java.lang.reflect.InvocationTargetException
+	at org.wso2.carbon.user.core.common.DefaultRealm.initializeObjects(DefaultRealm.java:325)
+	at org.wso2.carbon.user.core.common.DefaultRealm.init(DefaultRealm.java:136)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.initializeRealm(DefaultRealmService.java:276)
+	... 22 more
+Caused by: org.wso2.carbon.user.core.UserStoreException: nullType class java.lang.reflect.InvocationTargetException
+	at org.wso2.carbon.user.core.common.DefaultRealm.createObjectWithOptions(DefaultRealm.java:404)
+	at org.wso2.carbon.user.core.common.DefaultRealm.initializeObjects(DefaultRealm.java:231)
+	... 24 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.wso2.carbon.user.core.common.DefaultRealm.createObjectWithOptions(DefaultRealm.java:358)
+	... 25 more
+Caused by: org.wso2.carbon.user.core.UserStoreException: DB error occurred while persisting domain : PRIMARY & tenant id : -1234
+	at org.wso2.carbon.user.core.util.UserCoreUtil.persistDomain(UserCoreUtil.java:882)
+	at org.wso2.carbon.user.core.common.AbstractUserStoreManager.persistDomain(AbstractUserStoreManager.java:9023)
+	at org.wso2.carbon.user.core.jdbc.JDBCUserStoreManager.<init>(JDBCUserStoreManager.java:319)
+	at org.wso2.carbon.user.core.jdbc.JDBCUserStoreManager.<init>(JDBCUserStoreManager.java:261)
+	at org.wso2.carbon.user.core.jdbc.UniqueIDJDBCUserStoreManager.<init>(UniqueIDJDBCUserStoreManager.java:129)
+	... 31 more
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:319)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:212)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:744)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:676)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.getConnection(ConnectionPool.java:198)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.wso2.carbon.user.core.util.DatabaseUtil.getDBConnection(DatabaseUtil.java:1058)
+	at org.wso2.carbon.user.core.util.UserCoreUtil.persistDomain(UserCoreUtil.java:862)
+	... 35 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/lotharmohlala/Downloads/wso2am-4.0.0/repository/database/WSO2SHARED_DB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	... 57 more
+
+TID: [-1234] [] [2021-09-16 00:35:31,951]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Starting WSO2 Carbon...
+TID: [-1234] [] [2021-09-16 00:35:31,958]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Operating System : Mac OS X 11.0.1, x86_64
+TID: [-1234] [] [2021-09-16 00:35:31,959]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Home        : /usr/local/Cellar/openjdk/16.0.2/libexec/openjdk.jdk/Contents/Home
+TID: [-1234] [] [2021-09-16 00:35:31,959]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Version     : 16.0.2
+TID: [-1234] [] [2021-09-16 00:35:31,959]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java VM          : OpenJDK 64-Bit Server VM 16.0.2+0,Homebrew
+TID: [-1234] [] [2021-09-16 00:35:31,959]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Carbon Home      : /Users/lotharmohlala/Downloads/wso2am-4.0.0
+TID: [-1234] [] [2021-09-16 00:35:31,959]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Temp Dir    : /Users/lotharmohlala/Downloads/wso2am-4.0.0/tmp
+TID: [-1234] [] [2021-09-16 00:35:31,959]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - User             : lotharmohlala, en-ZA, Africa/Johannesburg
+TID: [-1] [] [2021-09-16 00:35:32,113]  INFO {org.wso2.carbon.crypto.provider.internal.DefaultCryptoProviderComponent} - 'CryptoService.Secret' property has not been set. 'org.wso2.carbon.crypto.provider.SymmetricKeyInternalCryptoProvider' won't be registered as an internal crypto provider. Please set the secret if the provider needs to be registered.
+TID: [-1] [] [2021-09-16 00:35:32,449]  INFO {org.wso2.carbon.event.output.adapter.kafka.internal.ds.KafkaEventAdapterServiceDS} - Successfully deployed the Kafka output event adaptor service
+TID: [-1] [] [2021-09-16 00:35:32,589]  INFO {org.wso2.carbon.event.template.manager.core.internal.ds.TemplateDeployerServiceTrackerDS} - Successfully deployed the execution manager tracker service
+TID: [-1234] [] [2021-09-16 00:35:34,944] ERROR {org.wso2.carbon.user.core.common.DefaultRealm} - nullType class java.lang.reflect.InvocationTargetException org.wso2.carbon.user.core.UserStoreException: nullType class java.lang.reflect.InvocationTargetException
+	at org.wso2.carbon.user.core.common.DefaultRealm.createObjectWithOptions(DefaultRealm.java:404)
+	at org.wso2.carbon.user.core.common.DefaultRealm.initializeObjects(DefaultRealm.java:231)
+	at org.wso2.carbon.user.core.common.DefaultRealm.init(DefaultRealm.java:136)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.initializeRealm(DefaultRealmService.java:276)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:102)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:115)
+	at org.wso2.carbon.user.core.internal.Activator.startDeploy(Activator.java:72)
+	at org.wso2.carbon.user.core.internal.BundleCheckActivator.start(BundleCheckActivator.java:61)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1013)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:598)
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1770)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.wso2.carbon.user.core.common.DefaultRealm.createObjectWithOptions(DefaultRealm.java:358)
+	... 25 more
+Caused by: org.wso2.carbon.user.core.UserStoreException: DB error occurred while persisting domain : PRIMARY & tenant id : -1234
+	at org.wso2.carbon.user.core.util.UserCoreUtil.persistDomain(UserCoreUtil.java:882)
+	at org.wso2.carbon.user.core.common.AbstractUserStoreManager.persistDomain(AbstractUserStoreManager.java:9023)
+	at org.wso2.carbon.user.core.jdbc.JDBCUserStoreManager.<init>(JDBCUserStoreManager.java:319)
+	at org.wso2.carbon.user.core.jdbc.JDBCUserStoreManager.<init>(JDBCUserStoreManager.java:261)
+	at org.wso2.carbon.user.core.jdbc.UniqueIDJDBCUserStoreManager.<init>(UniqueIDJDBCUserStoreManager.java:129)
+	... 31 more
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:319)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:212)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:744)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:676)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.getConnection(ConnectionPool.java:198)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.wso2.carbon.user.core.util.DatabaseUtil.getDBConnection(DatabaseUtil.java:1058)
+	at org.wso2.carbon.user.core.util.UserCoreUtil.persistDomain(UserCoreUtil.java:862)
+	... 35 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/lotharmohlala/Downloads/wso2am-4.0.0/repository/database/WSO2SHARED_DB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	... 57 more
+
+TID: [-1234] [] [2021-09-16 00:35:34,961] ERROR {org.wso2.carbon.user.core.internal.Activator} - Cannot start User Manager Core bundle org.wso2.carbon.user.core.UserStoreException: Cannot initialize the realm.
+	at org.wso2.carbon.user.core.common.DefaultRealmService.initializeRealm(DefaultRealmService.java:286)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:102)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:115)
+	at org.wso2.carbon.user.core.internal.Activator.startDeploy(Activator.java:72)
+	at org.wso2.carbon.user.core.internal.BundleCheckActivator.start(BundleCheckActivator.java:61)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1013)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:598)
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1770)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+Caused by: org.wso2.carbon.user.core.UserStoreException: nullType class java.lang.reflect.InvocationTargetException
+	at org.wso2.carbon.user.core.common.DefaultRealm.initializeObjects(DefaultRealm.java:325)
+	at org.wso2.carbon.user.core.common.DefaultRealm.init(DefaultRealm.java:136)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.initializeRealm(DefaultRealmService.java:276)
+	... 22 more
+Caused by: org.wso2.carbon.user.core.UserStoreException: nullType class java.lang.reflect.InvocationTargetException
+	at org.wso2.carbon.user.core.common.DefaultRealm.createObjectWithOptions(DefaultRealm.java:404)
+	at org.wso2.carbon.user.core.common.DefaultRealm.initializeObjects(DefaultRealm.java:231)
+	... 24 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.wso2.carbon.user.core.common.DefaultRealm.createObjectWithOptions(DefaultRealm.java:358)
+	... 25 more
+Caused by: org.wso2.carbon.user.core.UserStoreException: DB error occurred while persisting domain : PRIMARY & tenant id : -1234
+	at org.wso2.carbon.user.core.util.UserCoreUtil.persistDomain(UserCoreUtil.java:882)
+	at org.wso2.carbon.user.core.common.AbstractUserStoreManager.persistDomain(AbstractUserStoreManager.java:9023)
+	at org.wso2.carbon.user.core.jdbc.JDBCUserStoreManager.<init>(JDBCUserStoreManager.java:319)
+	at org.wso2.carbon.user.core.jdbc.JDBCUserStoreManager.<init>(JDBCUserStoreManager.java:261)
+	at org.wso2.carbon.user.core.jdbc.UniqueIDJDBCUserStoreManager.<init>(UniqueIDJDBCUserStoreManager.java:129)
+	... 31 more
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:319)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:212)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:744)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:676)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.getConnection(ConnectionPool.java:198)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.wso2.carbon.user.core.util.DatabaseUtil.getDBConnection(DatabaseUtil.java:1058)
+	at org.wso2.carbon.user.core.util.UserCoreUtil.persistDomain(UserCoreUtil.java:862)
+	... 35 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/lotharmohlala/Downloads/wso2am-4.0.0/repository/database/WSO2SHARED_DB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	... 57 more
+
+TID: [-1234] [] [2021-09-16 01:20:35,173]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Starting WSO2 Carbon...
+TID: [-1234] [] [2021-09-16 01:20:35,182]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Operating System : Mac OS X 11.0.1, x86_64
+TID: [-1234] [] [2021-09-16 01:20:35,182]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Home        : /usr/local/Cellar/openjdk/16.0.2/libexec/openjdk.jdk/Contents/Home
+TID: [-1234] [] [2021-09-16 01:20:35,182]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Version     : 16.0.2
+TID: [-1234] [] [2021-09-16 01:20:35,182]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java VM          : OpenJDK 64-Bit Server VM 16.0.2+0,Homebrew
+TID: [-1234] [] [2021-09-16 01:20:35,182]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Carbon Home      : /Users/lotharmohlala/Downloads/wso2am-4.0.0
+TID: [-1234] [] [2021-09-16 01:20:35,183]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Temp Dir    : /Users/lotharmohlala/Downloads/wso2am-4.0.0/tmp
+TID: [-1234] [] [2021-09-16 01:20:35,183]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - User             : lotharmohlala, en-ZA, Africa/Johannesburg
+TID: [-1] [] [2021-09-16 01:20:35,314]  INFO {org.wso2.carbon.crypto.provider.internal.DefaultCryptoProviderComponent} - 'CryptoService.Secret' property has not been set. 'org.wso2.carbon.crypto.provider.SymmetricKeyInternalCryptoProvider' won't be registered as an internal crypto provider. Please set the secret if the provider needs to be registered.
+TID: [-1] [] [2021-09-16 01:20:35,645]  INFO {org.wso2.carbon.event.output.adapter.kafka.internal.ds.KafkaEventAdapterServiceDS} - Successfully deployed the Kafka output event adaptor service
+TID: [-1] [] [2021-09-16 01:20:35,785]  INFO {org.wso2.carbon.event.template.manager.core.internal.ds.TemplateDeployerServiceTrackerDS} - Successfully deployed the execution manager tracker service
+TID: [-1234] [] [2021-09-16 01:20:38,072] ERROR {org.wso2.carbon.user.core.common.DefaultRealm} - nullType class java.lang.reflect.InvocationTargetException org.wso2.carbon.user.core.UserStoreException: nullType class java.lang.reflect.InvocationTargetException
+	at org.wso2.carbon.user.core.common.DefaultRealm.createObjectWithOptions(DefaultRealm.java:404)
+	at org.wso2.carbon.user.core.common.DefaultRealm.initializeObjects(DefaultRealm.java:231)
+	at org.wso2.carbon.user.core.common.DefaultRealm.init(DefaultRealm.java:136)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.initializeRealm(DefaultRealmService.java:276)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:102)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:115)
+	at org.wso2.carbon.user.core.internal.Activator.startDeploy(Activator.java:72)
+	at org.wso2.carbon.user.core.internal.BundleCheckActivator.start(BundleCheckActivator.java:61)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1013)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:598)
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1770)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.wso2.carbon.user.core.common.DefaultRealm.createObjectWithOptions(DefaultRealm.java:358)
+	... 25 more
+Caused by: org.wso2.carbon.user.core.UserStoreException: DB error occurred while persisting domain : PRIMARY & tenant id : -1234
+	at org.wso2.carbon.user.core.util.UserCoreUtil.persistDomain(UserCoreUtil.java:882)
+	at org.wso2.carbon.user.core.common.AbstractUserStoreManager.persistDomain(AbstractUserStoreManager.java:9023)
+	at org.wso2.carbon.user.core.jdbc.JDBCUserStoreManager.<init>(JDBCUserStoreManager.java:319)
+	at org.wso2.carbon.user.core.jdbc.JDBCUserStoreManager.<init>(JDBCUserStoreManager.java:261)
+	at org.wso2.carbon.user.core.jdbc.UniqueIDJDBCUserStoreManager.<init>(UniqueIDJDBCUserStoreManager.java:129)
+	... 31 more
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:319)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:212)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:744)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:676)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.getConnection(ConnectionPool.java:198)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.wso2.carbon.user.core.util.DatabaseUtil.getDBConnection(DatabaseUtil.java:1058)
+	at org.wso2.carbon.user.core.util.UserCoreUtil.persistDomain(UserCoreUtil.java:862)
+	... 35 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/lotharmohlala/Downloads/wso2am-4.0.0/repository/database/WSO2SHARED_DB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	... 57 more
+
+TID: [-1234] [] [2021-09-16 01:20:38,101] ERROR {org.wso2.carbon.user.core.internal.Activator} - Cannot start User Manager Core bundle org.wso2.carbon.user.core.UserStoreException: Cannot initialize the realm.
+	at org.wso2.carbon.user.core.common.DefaultRealmService.initializeRealm(DefaultRealmService.java:286)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:102)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:115)
+	at org.wso2.carbon.user.core.internal.Activator.startDeploy(Activator.java:72)
+	at org.wso2.carbon.user.core.internal.BundleCheckActivator.start(BundleCheckActivator.java:61)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1013)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:598)
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1770)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+Caused by: org.wso2.carbon.user.core.UserStoreException: nullType class java.lang.reflect.InvocationTargetException
+	at org.wso2.carbon.user.core.common.DefaultRealm.initializeObjects(DefaultRealm.java:325)
+	at org.wso2.carbon.user.core.common.DefaultRealm.init(DefaultRealm.java:136)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.initializeRealm(DefaultRealmService.java:276)
+	... 22 more
+Caused by: org.wso2.carbon.user.core.UserStoreException: nullType class java.lang.reflect.InvocationTargetException
+	at org.wso2.carbon.user.core.common.DefaultRealm.createObjectWithOptions(DefaultRealm.java:404)
+	at org.wso2.carbon.user.core.common.DefaultRealm.initializeObjects(DefaultRealm.java:231)
+	... 24 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.wso2.carbon.user.core.common.DefaultRealm.createObjectWithOptions(DefaultRealm.java:358)
+	... 25 more
+Caused by: org.wso2.carbon.user.core.UserStoreException: DB error occurred while persisting domain : PRIMARY & tenant id : -1234
+	at org.wso2.carbon.user.core.util.UserCoreUtil.persistDomain(UserCoreUtil.java:882)
+	at org.wso2.carbon.user.core.common.AbstractUserStoreManager.persistDomain(AbstractUserStoreManager.java:9023)
+	at org.wso2.carbon.user.core.jdbc.JDBCUserStoreManager.<init>(JDBCUserStoreManager.java:319)
+	at org.wso2.carbon.user.core.jdbc.JDBCUserStoreManager.<init>(JDBCUserStoreManager.java:261)
+	at org.wso2.carbon.user.core.jdbc.UniqueIDJDBCUserStoreManager.<init>(UniqueIDJDBCUserStoreManager.java:129)
+	... 31 more
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:319)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:212)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:744)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:676)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.getConnection(ConnectionPool.java:198)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.wso2.carbon.user.core.util.DatabaseUtil.getDBConnection(DatabaseUtil.java:1058)
+	at org.wso2.carbon.user.core.util.UserCoreUtil.persistDomain(UserCoreUtil.java:862)
+	... 35 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/lotharmohlala/Downloads/wso2am-4.0.0/repository/database/WSO2SHARED_DB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	... 57 more
+
